@@ -30,8 +30,18 @@ html {
     width: 70px;
     background: lightgray;
   }
+
+  #sideBar div {
+    margin:20px 0 0 10px
+  }
+
+  #sideBar div a {
+    text-decoration: none;
+  }
+
   
   #content {
     flex: 1 0 auto;
+    margin:20px;
     /* enable grow, disable shrink */
   }
