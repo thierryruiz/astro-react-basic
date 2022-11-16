@@ -15,22 +15,24 @@ const someProps = {
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<main>
-			<Counter {...someProps} client:visible>
-				<h1>Hello, React!</h1>
-			</Counter>
-		</main>
+		<div id="header">
+			<div id="headerContent">
+				Desktop
+			</div>
+			</div>
+			<div id="page">
+			<div id="sideBar">
+				<div>menu 1</div>
+				<div>menu 2</div>				
+			</div>
+			<div id="content">
+				<Counter {...someProps} client:visible>
+					<h1>Hello, React!</h1>
+				</Counter>
+			</div>
+			</div>
 	</body>
 </html>
