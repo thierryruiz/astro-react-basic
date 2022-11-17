@@ -1,12 +1,14 @@
 ---
 // Component Imports
 import MainLayout from '../layouts/MainLayout.astro';
+import Sidebar from '../layouts/Sidebar.astro';
 
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 <MainLayout>
-	Home
+	<Sidebar slot="sidebar"/>
+	<p>Home</p>
 </MainLayout>
 
