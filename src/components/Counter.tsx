@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { Button } from "@mui/material";
+
 import './Counter.css';
 
 const Counter = ({
@@ -15,9 +17,9 @@ const Counter = ({
 	return (
 		<>
 			<div className="counter">
-				<button onClick={subtract}>-</button>
+				<Button variant="contained" onClick={subtract}>-</Button>
 				<pre>{count}</pre>
-				<button onClick={add}>+</button>
+				<Button variant="contained" onClick={add}>+</Button>
 			</div>
 			<div className="counter-message">{children}</div>
 		</>

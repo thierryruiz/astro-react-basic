@@ -2,20 +2,32 @@
 // Component Imports
 import MainLayout from '../layouts/MainLayout.astro';
 import Counter from '../components/Counter';
+import Mui from '../components/Mui';
 import Sidebar from '../layouts/Sidebar.astro';
 import Header from '../layouts/Header.astro';
 const someProps = {
 	count: 0,
 };
+
 ---
+<style>
+	.counter-wrapper {
+		width:300px;
+		margin:0 auto;
+	}
+</style>
+
+
 <MainLayout>
 	<Header slot="header" />
 	<Sidebar slot="sidebar" />
 	
 	<!-- content -->
-	<p>React</p>
-	<Counter {...someProps} client:visible>
-		<p></p>
-	</Counter>
-
+	<p>React counter example. Click + and -</p>
+	<div class="counter-wrapper">
+		<Counter {...someProps} client:visible>
+			<p></p>
+		</Counter>
+	</div>
+	<Mui client:only />
 </MainLayout>
