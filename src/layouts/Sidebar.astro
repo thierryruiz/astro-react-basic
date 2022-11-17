@@ -1,0 +1,8 @@
+---
+import {menus} from "../data/menus";
+---
+
+<div id="sideBar">
+    { menus.map((menu) => <div><a href={menu.href}>{menu.label}</a></div>) }
+</div>
+

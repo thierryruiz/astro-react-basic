@@ -2,17 +2,20 @@
 // Component Imports
 import MainLayout from '../layouts/MainLayout.astro';
 import Counter from '../components/Counter';
+import Sidebar from '../layouts/Sidebar.astro';
+import Header from '../layouts/Header.astro';
 const someProps = {
 	count: 0,
 };
-
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 <MainLayout>
+	<Header slot="header" />
+	<Sidebar slot="sidebar" />
+	
+	<!-- content -->
+	<p>React</p>
 	<Counter {...someProps} client:visible>
-		<h1>Hello, React!</h1>
+		<p></p>
 	</Counter>
-</MainLayout>
 
+</MainLayout>

@@ -1,6 +1,7 @@
 ---
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
+
 ---
 
 <html lang="en">
@@ -12,19 +13,12 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<div id="header">
-			<div id="headerContent">
-				Desktop
-			</div>
-			</div>
-			<div id="page">
-			<div id="sideBar">
-				<div><a href="/">Home</a></div>
-				<div><a href="/react">React</a></div>				
-			</div>
+		<slot name="header" />
+		<div id="page">
+			<slot name="sidebar" />
 			<div id="content">
-                <slot />
-            </div>
+				<slot />
 			</div>
+		</div>
 	</body>
 </html>
