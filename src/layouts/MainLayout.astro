@@ -13,11 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<div id="header">
-			<div id="headerContent">
-				Desktop
-			</div>
-		</div>
+		<slot name="header" />
 		<div id="page">
 			<slot name="sidebar" />
 			<div id="content">

@@ -1,5 +1,6 @@
 ---
 // Component Imports
+import Header from '../layouts/Header.astro';
 import MainLayout from '../layouts/MainLayout.astro';
 import Sidebar from '../layouts/Sidebar.astro';
 
@@ -8,7 +9,11 @@ import Sidebar from '../layouts/Sidebar.astro';
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 <MainLayout>
-	<Sidebar slot="sidebar"/>
+	<Header slot="header" />
+	<Sidebar slot="sidebar" />
+	
+	<!-- Content  -->
 	<p>Home</p>
+
 </MainLayout>
 
