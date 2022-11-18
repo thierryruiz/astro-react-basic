@@ -4,4 +4,7 @@ export const menus = [{
 },{
     label:'React',
     href: '/react' 
+},{
+    label:'Fetch',
+    href: '/fetch' 
 }];
