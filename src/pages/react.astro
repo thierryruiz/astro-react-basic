@@ -17,16 +17,17 @@ const someProps = {
 	}
 </style>
 
-
 <MainLayout>
 	<Header slot="header" />
 	<Sidebar slot="sidebar" />
 	<!-- content -->
+	<h4>React and MUI</h4>
 	<p>React counter example. Click + and -</p>
 	<div class="counter-wrapper">
 		<Counter {...someProps} client:visible>
 			<p></p>
 		</Counter>
 	</div>
+	<p>MUI grid executed client side</p>
 	<Mui client:only />
 </MainLayout>
