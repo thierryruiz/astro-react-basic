@@ -9,7 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "serve": "node ./dist/server/entry.mjs" 
+    "serve": "node ./dist/server/entry.mjs",
+    "api": "node node_modules/json-server/lib/cli/bin --watch server/db.json --port 4000"
   },
   "dependencies": {
     "@astrojs/node": "^3.0.0",
@@ -25,5 +26,8 @@
     "react-dom": "^18.1.0"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "json-server": "^0.17.1"
+  }
 }
